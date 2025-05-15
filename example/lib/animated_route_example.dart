@@ -211,7 +211,7 @@ class AnimatedRouteExampleState extends State<AnimatedRouteExample>
   }
 
   @override
-  void onPointAnnotationClick(PointAnnotation annotation) async {
+  Future<void> onPointAnnotationClick(PointAnnotation annotation) async {
     // build route from puck position to the clicked annotation
     final start = await mapboxMap.style.getPuckPosition();
 

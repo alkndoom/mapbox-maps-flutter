@@ -19,7 +19,7 @@ class PointAnnotationExample extends StatefulWidget implements Example {
 
 class AnnotationClickListener extends OnPointAnnotationClickListener {
   @override
-  void onPointAnnotationClick(PointAnnotation annotation) {
+  Future<void> onPointAnnotationClick(PointAnnotation annotation) async {
     print("onAnnotationClick, id: ${annotation.id}");
   }
 }
