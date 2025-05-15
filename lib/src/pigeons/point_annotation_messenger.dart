@@ -1094,11 +1094,11 @@ abstract class OnPointAnnotationClickListener {
         pigeonVar_channel.setMessageHandler((Object? message) async {
           assert(message != null,
               'Argument for dev.flutter.pigeon.mapbox_maps_flutter.OnPointAnnotationClickListener.onPointAnnotationClick was null.');
-          print(message);
+          print('message: ${message}');
           final List<Object?> args = (message as List<Object?>?)!;
-          print(args);
+          print('args: ${args}');
           final PointAnnotation? arg_annotation = (args[0] as PointAnnotation?);
-          print(arg_annotation);
+          print('arg_annotation: ${arg_annotation}');
           assert(arg_annotation != null,
               'Argument for dev.flutter.pigeon.mapbox_maps_flutter.OnPointAnnotationClickListener.onPointAnnotationClick was null, expected non-null PointAnnotation.');
           try {
